@@ -1,28 +1,28 @@
 const questions = [
     {
-        question: "Di bawah ini adalah salah satu teknik dasar dalam permainan bola voli",
-        options: ["Passing dada", "mengontrol bola", "servis", "backhand"],
-        correctAnswer: "servis"
+        question: "Gerak spesifik dalam pencak silat yang digunakan sebagai dasar untuk sikap menyerang atau bertahan adalah",
+        options: ["Tendangan", "Pukulan", "Hindaran", "Kuda-kuda"],
+        correctAnswer: "Kuda-kuda"
     },
     {
-        question: "Pada waktu bola datang, bola didorong dengan jari-jari tangan dan perkenaannya melalui ruas pertama dan kedua dari jari telunjuk sampai kelingking, sedangkan ibu jari hanya pada ruas pertama saja, teknik ini merupakan gerakan?",
-        options: ["servis", "smash", "passing bawah", "passing atas"],
-        correctAnswer: "passing atas"
+        question: "Posisi badan menghadap ke depan dengan kaki dibuka selebar bahu dan kedua lengan berada di samping pinggang merupakan gerak kuda-kuda",
+        options: ["depan", "samping", "tengah", "samping"],
+        correctAnswer: "tengah"
     },
     {
-        question: "Teknik dasar untuk memulai permainan bolavoli adalah?",
-        options: ["Passing bawah", "Passing atas", "Smash", "Servis"],
-        correctAnswer: "Servis"
+        question: "Perubahan posisi kaki dari suatu tempat ke tempat lainnya dinamakan",
+        options: ["geseran", "lompatan", "pola langkah", "loncatan"],
+        correctAnswer: "pola langkah"
     },
     {
-        question: "Teknik memukul bola sambil meloncat dekat net sekuat-kuatnya dengan maksud untuk mematikan permainan lawan disebut?",
-        options: ["servis", "smash", "passing", "block"],
-        correctAnswer: "smash"
+        question: "Cara memindahkan sasaran dari arah serangan dalam pencak silat dinamakan",
+        options: ["Serangan", "Pembelaan", "Tangkisan", "Elakan"],
+        correctAnswer: "Elakan"
     },
     {
-        question: "Gerakan memukul bola sambil meloncat dekat net menggunakan gerak tipu dengan maksud untuk mematikan permainan lawan disebut",
-        options: ["spike", "smash", "passing", "block"],
-        correctAnswer: "spike"
+        question: "Cara pembelaan dengan mengadakan kontak langsung dengan lawan dinamakan",
+        options: ["Serangan", "Pembelaan", "Tangkisan", "Elakan"],
+        correctAnswer: "Tangkisan"
     },
     // Add more questions as needed
 ];
