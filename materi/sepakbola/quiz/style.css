@@ -30,3 +30,19 @@ label:hover {
     background-color: #9AE381;
     color: black;
 }
+
+/* Tambahkan warna hijau untuk persentase 100% atau di atas 70% */
+.green {
+    color: green;
+}
+
+/* Tambahkan warna kuning untuk persentase 50-70% */
+.yellow {
+    color: yellow;
+}
+
+/* Tambahkan warna merah untuk persentase di bawah 50% */
+.red {
+    color: red;
+}
+
