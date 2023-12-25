@@ -17,9 +17,15 @@
     </div>
     <div class="px-8 fixed bottom-10 w-full flex justify-center items-center">
         <button id="submit-btn" class="bg-green-400 font-bold py-2 w-full rounded">Selanjutnya</button>
-        <a href="../" id="done-btn" class="text-center bg-green-400 font-bold py-2 w-full rounded">Selesai</a>
+        <p onclick="goBack()" id="done-btn" class="text-center bg-green-400 font-bold py-2 w-full rounded">Selesai</p>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="./quiz.js"></script>
+    <script>
+        function goBack() {
+            // Melakukan navigasi mundur satu langkah dalam riwayat peramban
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

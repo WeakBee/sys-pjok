@@ -14,7 +14,7 @@
             Your browser does not support HTML video.
         </video>
         <div class="p-5">
-            <a class="font-medium" href="../index.html"> <- Kembali</a>
+            <p class="font-medium" onclick="goBack()"> <- Kembali</p>
             <p class="font-bold text-2xl text-green-400">Gizi Seimbang</p>
             <br>
             <p><b>Empat pilar gizi seimbang</b></p>
@@ -40,5 +40,11 @@
             <p>Salah satu Upaya yang dilakukan adalah dengan memenuhi kecukupan asupan gizi dari masing masing remaja. Asupan gizi yang masuk digunakan tubuh untuk menghasilkan energi dan kalori dalam melakukan aktivitas kehidupan sehari hari di samping untuk memenuhi nutrisi bagi sel-sel tubuh</p>
         </div>
     </div>
+    <script>
+        function goBack() {
+            // Melakukan navigasi mundur satu langkah dalam riwayat peramban
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

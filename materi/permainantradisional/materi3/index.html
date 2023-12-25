@@ -14,7 +14,7 @@
             Your browser does not support HTML video.
         </video>
         <div class="p-5">
-            <a class="font-medium" href="../index.html"> <- Kembali</a>
+            <p class="font-medium" onclick="goBack()"> <- Kembali</p>
             <p class="font-bold text-2xl text-green-400">Permainan Dorong ban</p>
             <br>
             <p>Bermain mendorong ban merupakan permainan tradisional yang cukup digemari pada masanya. Terlihat sederhana namun diperlukan kelincahan dan keseimbangan. Pemain yang mendorong paling cepat sampai di garis finish, maka menjadi pemenangnya.</p>
@@ -46,5 +46,11 @@
             </div>
         </div>
     </div>
+    <script>
+        function goBack() {
+            // Melakukan navigasi mundur satu langkah dalam riwayat peramban
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

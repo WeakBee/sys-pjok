@@ -14,7 +14,7 @@
             Your browser does not support HTML video.
         </video>
         <div class="p-5">
-            <a class="font-medium" href="../index.html"> <- Kembali</a>
+            <p class="font-medium" onclick="goBack()"> <- Kembali</p>
             <p class="font-bold text-2xl text-green-400">Permainan Balap Karung</p>
             <br>
             <p>Pada dahulu, karung merupakan satu satunya bahan yang dapat digunakan untuk membuat pakaian. Pakaian yang terbuat dari kain merupakan suatu hal yang sangat langka dan mewah. Setelah Merdeka, untuk memperingati masa masa kelam, Masyarakat Indonesia menciptakan olahraga balap karung</p>
@@ -46,5 +46,11 @@
             </div>
         </div>
     </div>
+    <script>
+        function goBack() {
+            // Melakukan navigasi mundur satu langkah dalam riwayat peramban
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

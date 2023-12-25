@@ -14,11 +14,17 @@
             Your browser does not support HTML video.
         </video>
         <div class="p-5">
-            <a class="font-medium" href="../index.html"> <- Kembali</a>
+            <p class="font-medium" onclick="goBack()"> <- Kembali</p>
             <p class="font-bold text-2xl text-green-400">Netting Forehand</p>
             <br>
             <p class="text-green-400">"Netting Forehand adalah pukulan yang dilakukan dekat net dengan forehand, diarahkan sedekat mungkin ke net dipukul dengan sentuhan tenaga halus sekali. Pukulan netting yang baik bolanya dipukul halus dan melintir tipis dekat sekali dengan net"</p>
         </div>
     </div>
+    <script>
+        function goBack() {
+            // Melakukan navigasi mundur satu langkah dalam riwayat peramban
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
