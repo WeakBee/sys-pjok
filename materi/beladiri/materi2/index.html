@@ -14,11 +14,17 @@
             Your browser does not support HTML video.
         </video>
         <div class="p-5">
-            <a class="font-medium" href="../index.html"> <- Kembali</a>
+            <p class="font-medium" onclick="goBack()"> <- Kembali</a>
             <p class="font-bold text-2xl text-green-400">Kuda Kuda Depan</p>
             <br>
             <p class="text-green-400">"Kuda kuda depan dapat dilakukan dari posisi berdiri kuda kuda dengan salah satu kaki ditarik ke depan dan lutut tetap ditekuk, sedangkan kaki lainnya di belakang dan berat badan bertumpu di kaki depan."</p>
         </div>
     </div>
+    <script>
+        function goBack() {
+            // Melakukan navigasi mundur satu langkah dalam riwayat peramban
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

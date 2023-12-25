@@ -14,11 +14,9 @@
                 <img class="w-1/2 mt-5" src="../image/logoimg-nobg.svg" alt="Logo">
             </div>
             <h1 class="text-center text-white mb-3"><b>Sistem Pembelajaran PJOK Tingkat SMP Kelas 7</b></h1>
-            <!-- <a class="font-medium" href="../index.html"> 
-                <div class="bg-green-700 text-white p-2 rounded-lg text-center">
-                    <- Kembali
-                </div>
-            </a> -->
+            <div onclick="goBack()" class="bg-green-700 text-white p-2 rounded-lg text-center">
+                <- Kembali
+            </div>
         </div>
         <p class="px-5 mb-3 text-xl font-bold text-green-600">Semester 1</p>
         <div class="px-5 mb-3">
@@ -191,5 +189,11 @@
             </div>
         </div>
     </div>
+    <script>
+        function goBack() {
+            // Melakukan navigasi mundur satu langkah dalam riwayat peramban
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
