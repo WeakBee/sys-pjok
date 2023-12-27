@@ -1,29 +1,37 @@
 const questions = [
     {
-        question: "Di bawah ini adalah salah satu teknik dasar dalam permainan bola voli",
-        options: ["Passing dada", "mengontrol bola", "servis", "backhand"],
+        question: "Dibawah ini adalah salah satu teknik dasar dalam permainan bola voli adalah",
+        options: ["passing dada", "servis", "backhand", "mengontrol bola"],
         correctAnswer: "servis"
-    },
-    {
-        question: "Pada waktu bola datang, bola didorong dengan jari-jari tangan dan perkenaannya melalui ruas pertama dan kedua dari jari telunjuk sampai kelingking, sedangkan ibu jari hanya pada ruas pertama saja, teknik ini merupakan gerakan?",
+    },{
+        question: "Kedua kaki terbuka, lutut ditekuk, kedua lengan lurus dijulurkan ke dpepan bawah dan tangan satu sama lain dikaitkan atau berpegangan, teknik ini merupakan gerakan",
+        options: ["servis", "smash", "passing bawah", "passing atas"],
+        correctAnswer: "passing bawah"
+    },{
+        question: "Pada waktu bola datang, bola didorong dengan jari-jari tangan dan perkenaannya melalui ruas pertama dan kedua dari jari telunjuk sampai kelingking, sedangkan ibu jari hanya pada ruas pertama saja, teknik ini merupakan",
         options: ["servis", "smash", "passing bawah", "passing atas"],
         correctAnswer: "passing atas"
-    },
-    {
-        question: "Teknik dasar untuk memulai permainan bolavoli adalah?",
-        options: ["Passing bawah", "Passing atas", "Smash", "Servis"],
-        correctAnswer: "Servis"
-    },
-    {
-        question: "Teknik memukul bola sambil meloncat dekat net sekuat-kuatnya dengan maksud untuk mematikan permainan lawan disebut?",
+    },{
+        question: "Teknik dasar untuk memulai permainan bola voli adalah",
+        options: ["passing bawah", "passing atas", "servis", "smash"],
+        correctAnswer: "servis"
+    },{
+        question: "Dibawah ini adalah faktor-faktor keberhasilan dalam suatu servis, kecuali",
+        options: ["kecepatan bola", "kerasnya bola yang dipukul", "perputaran bola", "penempatan bola ditempat kosong"],
+        correctAnswer: "perputaran bola"
+    },{
+        question: "Teknik memukul bola sambil meloncat dekat net sekuat-kuatnya dengan maksud untuk mematikan permainan lawan adalah",
         options: ["servis", "smash", "passing", "block"],
         correctAnswer: "smash"
-    },
-    {
-        question: "Gerakan memukul bola sambil meloncat dekat net menggunakan gerak tipu dengan maksud untuk mematikan permainan lawan disebut",
-        options: ["spike", "smash", "passing", "block"],
-        correctAnswer: "spike"
-    },
+    },{
+        question: "Posisi siap menghadap bola yang datang dari arah lawan yang dilakukan di dekat net oleh seseorang atau lebih pemain depan disebut",
+        options: ["spike", "smash", "block", "passing"],
+        correctAnswer: "block"
+    },{
+        question: "Dibawah ini adalah tahapan melakukan bendungan (block), kecuali",
+        options: ["awalan", "berlari", "tolakan", "loncatan"],
+        correctAnswer: "berlari"
+    }
     // Add more questions as needed
 ];
 
@@ -55,11 +63,25 @@ function checkAnswer() {
 
 function showResult() {
     const resultContainer = $("#result-container");
-    resultContainer.text(`Kamu Benar: ${score} dari ${questions.length} Soal`);
+    const percentage = ((score / questions.length) * 100).toFixed(2);
+    let colorClass;
+    let additionalText = "";
+
+    if (percentage >= 70) {
+        colorClass = "green";
+        additionalText = "Keren!"; // Jika 70-100%, berwarna hijau
+    } else if (percentage >= 50) {
+        colorClass = "yellow";
+        additionalText = "Sudah baik, tapi kalau bisa terus coba lagi ya"; // Jika 50-70%, berwarna kuning
+    } else {
+        colorClass = "red";
+        additionalText = "Nilai kamu masih sangat rendah silahkan coba lagi"; // Jika di bawah 50%, berwarna merah
+    }
+
+    resultContainer.text(`Nilai: ${percentage} - ${additionalText}`);
+    resultContainer.addClass(colorClass); // Menambahkan kelas warna sesuai kondisi
     $("#submit-btn").hide();
     $("#done-btn").show();
-
-    // Optionally, you can add logic to display a message based on the score
 }
 
 $(document).ready(function() {

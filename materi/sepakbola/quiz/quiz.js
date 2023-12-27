@@ -48,31 +48,6 @@ const questions = [
         question: "Jumlah pemain sepak bola adalah?",
         options: ["7", "9", "10", "11"],
         correctAnswer: "11"
-    },
-    {
-        question: "Apakah siswa mampu mempraktekan gerakan menendang bola?",
-        options: ["Iya", "Tidak"],
-        correctAnswer: "Iya"
-    },
-    {
-        question: "Apakah siswa mampu mempraktekan gerakan menghentikan bola?",
-        options: ["Iya", "Tidak"],
-        correctAnswer: "Iya"
-    },
-    {
-        question: "Apakah siswa mampu mempraktekan gerakan menggiring bola?",
-        options: ["Iya", "Tidak"],
-        correctAnswer: "Iya"
-    },
-    {
-        question: "Apakah siswa mampu mempraktekan menyundul bola?",
-        options: ["Iya", "Tidak"],
-        correctAnswer: "Iya"
-    },
-    {
-        question: "Apakah siswa mampu melempar bola ke dalam?",
-        options: ["Iya", "Tidak"],
-        correctAnswer: "Iya"
     }
     // Add more questions as needed
 ];

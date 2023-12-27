@@ -9,11 +9,7 @@
     <title>Quiz</title>
 </head>
 <body class="bg-black relative">
-    <div class="font-medium text-white py-2" onclick="goBack()">
-        <p class="bg-green-400 p-2"><- Kembali</p>
-    </div>
-    <iframe class="w-full min-h-screen" src="https://forms.gle/dz1haLVUCBgQfniCA" frameborder="0"></iframe>
-    <!-- <div id="quiz-container" class="p-8 text-white max-w-md mx-auto">
+    <div id="quiz-container" class="p-8 text-white max-w-md mx-auto">
         <h1 class="text-xl text-green-400 font-bold mb-4">Quiz</h1>
         <div id="question-container" class="mb-4 pt-5 border-t border-green-400"></div>
         <div id="options-container" class="space-y-2"></div>
@@ -21,10 +17,10 @@
     </div>
     <div class="px-8 fixed bottom-10 w-full flex justify-center items-center">
         <button id="submit-btn" class="bg-green-400 font-bold py-2 w-full rounded">Selanjutnya</button>
-        <a href="../" id="done-btn" class="text-center bg-green-400 font-bold py-2 w-full rounded">Selesai</a>
+        <p onclick="goBack()" id="done-btn" class="text-center bg-green-400 font-bold py-2 w-full rounded">Selesai</p>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="./quiz.js"></script> -->
+    <script src="./quiz.js"></script>
     <script>
         function goBack() {
             // Melakukan navigasi mundur satu langkah dalam riwayat peramban
