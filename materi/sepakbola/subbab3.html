@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../all.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Sepak Bola</title>
+</head>
+<body>
+    <div class="home-screen w-screen min-h-screen bg-black pb-20 relative">
+        <div class="flex justify-center">
+            <img class="w-1/2 mt-5" src="../../image/logoimg-nobg.svg" alt="Logo">
+        </div>
+        <div class="px-5">
+            <div class="bg-white rounded-xl p-5">
+                <p class="font-medium" onclick="goBack()"> <- Kembali</p>
+                <div class="py-3 flex border-b-2 border-dashed border-black">
+                    <div class="w-1/2">
+                        <p class="font-bold">Sepak Bola : Passing</p>
+                    </div>
+                    <div class="w-1/2 text-right">
+                        <p class="text-gray-600">3 Sub Materi</p>
+                    </div>
+                </div>
+                <div class="py-3">
+                    <ul class="list-disc list-inside">
+                        <li><a href="./materi10/index.html">Passing Kaki Dalam</a></li>
+                        <li><a href="./materi11/index.html">Passing Kaki Luar</a></li>
+                        <li><a href="./materi12/index.html">Passing Punggung Kaki</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            // Melakukan navigasi mundur satu langkah dalam riwayat peramban
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
